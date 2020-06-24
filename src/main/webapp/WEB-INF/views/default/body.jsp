@@ -41,10 +41,12 @@
 			}
 			c=0
 			number=0
+			l=${list}
 			for(i=0;i<size;i++){
-				s='${list.get(i).getImg()}'
-				p='${list.get(i).getProduct()}'
-				alert(p)
+				s=l[i]
+				console.log(s)
+				p="aa"
+				
 				if(i<sessionStorage.getItem("last") && i>=sessionStorage.getItem("start")){
 // 					alert("i : "+i+", last : "+sessionStorage.getItem("last")+", start : "+sessionStorage.getItem("start"))
 					if(i%3==0) {
