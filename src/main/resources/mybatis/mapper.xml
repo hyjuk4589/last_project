@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.project.mybatis.myMapper"> <!-- name을 아무거나 정해도 상관 없으며 그냥 경로설정 -->
+	<select id="selectAll_User" resultType="userdto" parameterType="userdto">		<!-- com.care.mybatis.myMapper.listAll을 통해 경로 설정이 가능 -->
+		select * from self_design
+	</select>
+	<select id="select_User" resultType="userdto"  parameterType="userdto">
+		select * from self_design where id=#{id}
+	</select>
+	<insert id="insert_User" parameterType="userdto">
+		insert into self_design values(#{id},#{pw},#{name},#{add},#{phon})
+	</insert>
+	<delete id="delete_User" parameterType="userdto">
+		delete self_design where num=#{num}
+	</delete>
+	<update id="update_User" parameterType="userdto">
+		update self_design set pw=#{pw}, name=#{name}, addr=#{add}, phon=#{phon} where id=#{id}
+	</update>
+	
+	<select id="selectAll_List" resultType="listdto">
+		select * from data_list
+	</select>
+</mapper>
