@@ -1,12 +1,16 @@
 package com.project.service;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
 import com.project.dao.ListDAO;
 import com.project.dao.UserDAO;
+import com.project.dto.ListDTO;
 import com.project.dto.UserDTO;
 
 @Service
@@ -49,6 +53,11 @@ public class ProjectService {
 	}
 	
 	public void body(Model model) {
-		model.addAttribute("list",listdao.selectAll());
+		List<ListDTO> l = listdao.selectAll();
+		ArrayList<String> arr= new ArrayList<String>();
+		for(int i=0;i<l.size();i++) {
+			arr.add("'"+l.get(i).getImg()+"'");
+		}
+		model.addAttribute("list",arr);
 	}
 }
