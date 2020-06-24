@@ -55,9 +55,12 @@ public class ProjectService {
 	public void body(Model model) {
 		List<ListDTO> l = listdao.selectAll();
 		ArrayList<String> arr= new ArrayList<String>();
+		ArrayList<String> arr2= new ArrayList<String>();
 		for(int i=0;i<l.size();i++) {
 			arr.add("'"+l.get(i).getImg()+"'");
+			arr2.add("'"+l.get(i).getProduct()+"'");
 		}
-		model.addAttribute("list",arr);
+		model.addAttribute("list_img",arr);
+		model.addAttribute("list_product",arr2);
 	}
 }

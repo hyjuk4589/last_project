@@ -9,7 +9,7 @@
 <body>
 	<script src="resources/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript">
-		var size= ${list.size()}
+		var size= ${list_img.size()}
 		function number_click(age) {
 			sessionStorage.setItem("last", 9*age);
 			sessionStorage.setItem("start", sessionStorage.getItem("last")-9);
@@ -41,11 +41,11 @@
 			}
 			c=0
 			number=0
-			l=${list}
+			l=${list_img}
+			r=${list_product}
 			for(i=0;i<size;i++){
 				s=l[i]
-				console.log(s)
-				p="aa"
+				p=r[i]
 				
 				if(i<sessionStorage.getItem("last") && i>=sessionStorage.getItem("start")){
 // 					alert("i : "+i+", last : "+sessionStorage.getItem("last")+", start : "+sessionStorage.getItem("start"))
