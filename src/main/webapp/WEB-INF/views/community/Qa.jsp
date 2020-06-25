@@ -43,11 +43,14 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 <div align="center" class="div1">
 	<table border="0">
 		<caption><font style="font: 400 30px 'Poppins',sans-serif;">Q/A<br></font></caption>
-		<tr> 
-			<th>번호</th><th>이름</th><th>제목</th>
-			<th>날짜</th><th>조회수</th><th>group</th>
-			<th>step</th><th>indent</th>
-		</tr>
+			<tr>
+				<th style="width: 10%;">번호</th>
+				<th style="width: 10%;">카테고리</th>
+				<th style="width: 50%;">제목</th>
+				<th style="width: 10%;">작성자</th>
+				<th style="width: 10%;">작성일</th>
+			</tr>
+
 		<c:forEach items="${dao.list() }" var="dto"> 
 		<tr>
 			<td>${dto.id }</td><td>${dto.name }</td>
@@ -57,8 +60,7 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 			</td>
 			
 			<td>${dto.savedate }</td>
-			<td>${dto.hit }</td><td>${dto.idgroup }</td>
-			<td>${dto.step }</td><td>${dto.indent }</td>
+			<td>${dto.hit }</td>
 		</tr>
 		</c:forEach>
 		<tr>
