@@ -1,5 +1,8 @@
 package com.project.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,9 +26,22 @@ public class ProjectController {
 	public String login(){
 		return "login&join/login";
 	}
+	
+	@RequestMapping("logout")
+	public String logout() {
+		return "login&join/logoutPage";
+	}
 	@RequestMapping("loginchk")
-	public String loginch(Model model, @RequestParam String id, @RequestParam String pw) {
-		return service.loginch(model,id,pw);
+	public String loginch(@RequestParam String id, @RequestParam String pw,HttpServletRequest request) {
+		boolean chk = service.loginch(id,pw);
+		if(chk==true) {
+			HttpSession session = request.getSession();
+			session.setAttribute("id", id);
+			session.setAttribute("pw", pw);
+			return "redirect:index";
+		}else {
+			return "redirect:login";
+		}
 	}
 	@RequestMapping("joinok")
 	public String joinok(UserDTO dto) {

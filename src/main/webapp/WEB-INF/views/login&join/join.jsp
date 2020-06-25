@@ -12,8 +12,8 @@
 <link rel="stylesheet" type="text/css" href="resources/vendor/animate/animate.css">
 <link rel="stylesheet" type="text/css" href="resources/vendor/css-hamburgers/hamburgers.min.css">
 <link rel="stylesheet" type="text/css" href="resources/vendor/select2/select2.min.css">
-<link rel="stylesheet" type="text/css" href="resources/css/util.css">
-<link rel="stylesheet" type="text/css" href="resources/css/main.css">
+<link rel="stylesheet" type="text/css" href="resources/css/util.css?after">
+<link rel="stylesheet" type="text/css" href="resources/css/main.css?after">
 <script type="text/javascript" src="resources/vendor/jquery/jquery-3.2.1.min.js"></script>
 <title>Insert title here</title>
 </head>
@@ -77,11 +77,12 @@
 <div class="limiter">
 		<div class="container-login100" align="center">
 			<div class="wrap-login100" align="center">
-			<div class="login100-pic js-tilt" data-tilt>
-				<img src="resources/images/80678738_2416624028588147_5452304186879982403_n.jpg" alt="IMG" style="padding:65px 0 0 0">
-			</div>
+			<h2>Self Design 계정 만들기</h2><br>
+<!-- 			<div class="login100-pic js-tilt" data-tilt> -->
+<!-- 				<img src="resources/images/80678738_2416624028588147_5452304186879982403_n.jpg" alt="IMG"> -->
+<!-- 			</div> -->
 				<div align="center">
-					<h2>Self Design 계정 만들기</h2><br>
+					
 					<form action="joinok" name="user" style="align:center;">
 		
 					<div class="wrap-input100 validate-input" align="center">
@@ -130,7 +131,7 @@
 						</span>
 					</div>
 					<div class="container-login100-form-btn">
-				<input type="button" class="login100-form-btn" onclick="al()" value="회원가입">
+				<input type="button" class="login100-form-btn-login" onclick="al()" value="회원가입">
 			</div>
 			
 			<label style="margin-right: 95px;" id="pw1"></label><br>
