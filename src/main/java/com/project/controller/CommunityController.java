@@ -22,5 +22,10 @@ public class CommunityController {
 		return "community/Review";
 	}
 	
+	@RequestMapping("qa")
+	public String Qa() {
+		return "community/Qa";
+	}
+	
 	
 }

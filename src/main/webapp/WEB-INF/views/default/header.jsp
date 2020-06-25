@@ -107,7 +107,7 @@ body, html {
 			<span class="dropbtn0" ><a href="#" style="color: black;">COMMUNITY</a></span>&nbsp;&nbsp;
 				<div class="dropdown-content0">
 				<a href="notice" style="color: black;">NOTICE</a><br>
-				<a href="#"style="color: black;">Q / A</a><br>
+				<a href="qa"style="color: black;">Q / A</a><br>
 				<a href="review" style="color: black;">REVIEW</a>
 				</div></div>
 				
