@@ -4,36 +4,40 @@ import java.sql.Date;
 
 public class CommnuityDTO {
 	
-	private int notice_id;
-	private String notice_title;
-	private String notice_coments;
-	private Date mod_date;
+	private int num;
+	private String category,title,writer;
+	private Date date_num;
 	
-	public int getNotice_id() {
-		return notice_id;
+	public int getNum() {
+		return num;
 	}
-	public void setNotice_id(int notice_id) {
-		this.notice_id = notice_id;
+	public void setNum(int num) {
+		this.num = num;
 	}
-	public String getNotice_title() {
-		return notice_title;
+	public String getCategory() {
+		return category;
 	}
-	public void setNotice_title(String notice_title) {
-		this.notice_title = notice_title;
+	public void setCategory(String category) {
+		this.category = category;
 	}
-	public String getNotice_coments() {
-		return notice_coments;
+	public String getTitle() {
+		return title;
 	}
-	public void setNotice_coments(String notice_coments) {
-		this.notice_coments = notice_coments;
+	public void setTitle(String title) {
+		this.title = title;
 	}
-	public Date getMod_date() {
-		return mod_date;
+	public String getWriter() {
+		return writer;
 	}
-	public void setMod_date(Date mod_date) {
-		this.mod_date = mod_date;
+	public void setWriter(String writer) {
+		this.writer = writer;
 	}
-	
-	
+	public Date getDate_num() {
+		return date_num;
+	}
+	public void setDate_num(Date date_num) {
+		this.date_num = date_num;
+	}
 
+	
 }

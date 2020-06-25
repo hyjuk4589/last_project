@@ -21,6 +21,6 @@
 	</update>
 	
 	<select id="selectAll_List" resultType="listdto">
-		select * from data_list
+		select * from Board_1
 	</select>
 </mapper>
