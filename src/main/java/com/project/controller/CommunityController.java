@@ -17,5 +17,10 @@ public class CommunityController {
 		return "community/notice";
 	}
 	
+	@RequestMapping("review")
+	public String review() {
+		return "community/Review";
+	}
+	
 	
 }

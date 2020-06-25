@@ -108,7 +108,7 @@ body, html {
 				<div class="dropdown-content0">
 				<a href="notice" style="color: black;">NOTICE</a><br>
 				<a href="#"style="color: black;">Q / A</a><br>
-				<a href="#" style="color: black;">REVIEW</a>
+				<a href="review" style="color: black;">REVIEW</a>
 				</div></div>
 				
 			<div class="dropdown1" >
