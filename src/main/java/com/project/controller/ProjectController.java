@@ -77,4 +77,16 @@ public class ProjectController {
 		service.body(model);
 		return "default/body";
 	}
+	
+
+	@RequestMapping("naverLogin")
+	public String naverLogin(HttpSession session) {
+		return "login&join/naverLogin";
+	}
+	
+	@RequestMapping("callback")
+	public String navLogin(HttpServletRequest request) throws Exception {	
+		return "login&join/CallBack";
+	}	
+
 }
