@@ -6,5 +6,6 @@
    <typeAliases>
 		<typeAlias alias="userdto" type="com.project.dto.UserDTO"/>
 		<typeAlias alias="listdto" type="com.project.dto.ListDTO"/>
+		<typeAlias alias="comdto" type="com.project.dto.CommnuityDTO"/>
    </typeAliases>
 </configuration>

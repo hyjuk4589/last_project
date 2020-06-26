@@ -44,10 +44,10 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 		<caption><font style="font: 400 30px 'Poppins',sans-serif;">Notice<br></font></caption>
 			<tr>
 				<th style="width: 10%;">번호</th>
-				<th style="width: 10%;">카테고리</th>
 				<th style="width: 50%;">제목</th>
 				<th style="width: 10%;">작성자</th>
 				<th style="width: 10%;">작성일</th>
+				<th style="width: 10%;">조회수</th>
 			</tr>
 
 			<tr>

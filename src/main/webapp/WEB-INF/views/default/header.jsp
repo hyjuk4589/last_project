@@ -53,7 +53,7 @@ body, html {
 .dropdown { position: relative; display: inline-block;}
 .dropdown-content {   display: none; position: absolute; background-color:#f1f1f1;
 			 min-width: 80px; min-height: 150px; text-align:center; right: 0px; 
-			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:윤고딕;
+			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:18px;font-family:윤고딕;
  z-index:1; }
 .dropdown-content a:hover { background-color: #ddd; }
 .dropdown:hover .dropdown-content { display: block; }
@@ -62,7 +62,7 @@ body, html {
 .dropdown1 { position: relative; display: inline-block;}
 .dropdown-content1 {   display: none; position: absolute; background-color:#f1f1f1;
 			 min-width: 100px; min-height: 150px; text-align:center; right: 0px;
-			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:윤고딕;
+			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:18px;font-family:윤고딕;
  z-index:1; }
 .dropdown-content1 a:hover { background-color: #ddd; }
 .dropdown1:hover .dropdown-content1 { display: block; }
@@ -71,7 +71,7 @@ body, html {
 .dropdown0 { position: relative; display: inline-block;}
 .dropdown-content0 {   display: none; position: absolute; background-color:#f1f1f1;
 			 min-width: 80px; min-height: 120px; text-align:center; right: 0px;
-			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:윤고딕;
+			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:18px;font-family:윤고딕;
  z-index:1; }
 .dropdown-content0 a:hover { background-color: #ddd; }
 .dropdown0:hover .dropdown-content0 { display: block; }
@@ -107,7 +107,7 @@ body, html {
 			<span class="dropbtn0" ><a href="#" style="color: black;">COMMUNITY</a></span>&nbsp;&nbsp;
 				<div class="dropdown-content0">
 				<a href="notice" style="color: black;">NOTICE</a><br>
-				<a href="qa"style="color: black;">Q / A</a><br>
+				<a href="list"style="color: black;">Q / A</a><br>
 				<a href="review" style="color: black;">REVIEW</a>
 				</div></div>
 				
@@ -140,7 +140,7 @@ body, html {
         }
    </script>
 
-				<span><a href="#" style="color: black;" onclick="openChild()">LOGIN</a></span>
+				<span><a href="#" style="color: black;" onclick="openChild()">LOGIN</a></span><br>
 				</c:when>
 				<c:otherwise>
 				<span><a href="../login&join/logout" style="color: black;">LOGOUT</a></span>

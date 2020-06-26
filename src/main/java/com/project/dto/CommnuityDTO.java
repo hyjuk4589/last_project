@@ -1,24 +1,24 @@
 package com.project.dto;
 
 import java.sql.Date;
+import java.util.List;
 
 public class CommnuityDTO {
 	
-	private int num;
-	private String category,title,writer;
-	private Date date_num;
 	
-	public int getNum() {
-		return num;
+	private int bno;
+	private String title;
+	private String content;
+	private String writer;
+	private Date regdate;
+	private int viewcnt;
+	
+	
+	public int getBno() {
+		return bno;
 	}
-	public void setNum(int num) {
-		this.num = num;
-	}
-	public String getCategory() {
-		return category;
-	}
-	public void setCategory(String category) {
-		this.category = category;
+	public void setBno(int bno) {
+		this.bno = bno;
 	}
 	public String getTitle() {
 		return title;
@@ -26,18 +26,33 @@ public class CommnuityDTO {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
 	public String getWriter() {
 		return writer;
 	}
 	public void setWriter(String writer) {
 		this.writer = writer;
 	}
-	public Date getDate_num() {
-		return date_num;
+	public Date getRegdate() {
+		return regdate;
 	}
-	public void setDate_num(Date date_num) {
-		this.date_num = date_num;
+	public void setRegdate(Date regdate) {
+		this.regdate = regdate;
 	}
-
+	public int getViewcnt() {
+		return viewcnt;
+	}
+	public void setViewcnt(int viewcnt) {
+		this.viewcnt = viewcnt;
+	}
+	
+	
+	
+	
 	
 }

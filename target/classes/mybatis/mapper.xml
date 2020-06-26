@@ -21,6 +21,11 @@
 	</update>
 	
 	<select id="selectAll_List" resultType="listdto">
-		select * from Board_1
+		select * from data_list
 	</select>
+	
+	<select id="selectAll_Commnuity" resultType="comdto">
+		select * from board_sys
+	</select>
+	
 </mapper>

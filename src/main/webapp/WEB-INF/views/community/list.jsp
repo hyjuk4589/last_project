@@ -45,26 +45,23 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 		<caption><font style="font: 400 30px 'Poppins',sans-serif;">Q/A<br></font></caption>
 			<tr>
 				<th style="width: 10%;">번호</th>
-				<th style="width: 10%;">카테고리</th>
 				<th style="width: 50%;">제목</th>
 				<th style="width: 10%;">작성자</th>
 				<th style="width: 10%;">작성일</th>
+				<th style="width: 10%;">조회수</th>
 			</tr>
 
-		<c:forEach items="${dao.list() }" var="dto"> 
+		<c:forEach var="dto" items="${list}">
 		<tr>
-			<td>${dto.id }</td><td>${dto.name }</td>
-			<td>
-			<c:forEach begin="1" end="${dto.indent }">↗</c:forEach>
-			<a href="content_view.jsp?id=${dto.id }">${dto.title }</a>
-			</td>
-			
-			<td>${dto.savedate }</td>
-			<td>${dto.hit }</td>
+			<td>${dto.bno }</td>
+			<td>${dto.title }</td>
+			<td>${dto.writer }</td>
+			<td>${dto.regdate }</td>
+			<td>${dto.viewcnt }</td>
 		</tr>
 		</c:forEach>
 		<tr>
-			<td colspan="8" style="text-align: center;">
+			<td colspan="5" style="text-align: center;">
 				<a href="write_view.jsp">글작성</a>
 			</td>
 		</tr>
