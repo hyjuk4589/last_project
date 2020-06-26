@@ -25,24 +25,10 @@
 </div>
 
 <!-- <font class="font" size="7">나만의 상품</font> -->
-
 <div class="img1">
 <img src="resources/img/2.jpg" style=" padding-left: 500px;padding-top:50px; width: 600px; ">
 <img src="resources/img/5.png" style=" padding-top:50px; width: 500px; height: 800px;  "></div>
-<!-- <div> -->
-<!--    <div style= "width: 70%; height: 300px; " align="center"> -->
-<!--       <div style=" -->
-<!--          width: 1200px; height: 500px;  -->
-<!--          background:  url(resources/img/04.jpg) -->
-<!--          no-repeat 0;  -->
-<!--          background-position:center top; -->
-<!--          background-attachment: fixed; -->
-<!--          vertical-align: middle; -->
-<!--          text-align: center; -->
-         
-<!--       "></div> -->
-<!--    </div> -->
-<!-- </div> -->
+
 
 <div class="img2">
 <img src="resources/img/04.jpg" style="padding-left: 100px; padding-top:50px; width: 500px;">

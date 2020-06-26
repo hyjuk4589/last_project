@@ -18,7 +18,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 	<script type="text/javascript">
+	
+	
+	
 		function ch() {
 			if (document.getElementById("id").value == "") {
 				alert("아이디 칸이 비어있습니다.")
@@ -86,14 +90,13 @@
 					<form action="joinok" name="user" style="align:center;">
 		
 					<div class="wrap-input100 validate-input" align="center">
-						<input type="text" id="id" placeholder="아이디" class=input100 name="id">
+						<input type="text" id="id" placeholder="아이디" class=input100 name="id" value="${NaverDto.id }">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"  style="text-align:right;"></i>
 						</span>
 					</div>
 					
-						
 						
 					<div class="wrap-input100 validate-input">
 						<input type="text" id="pw" placeholder="비밀번호" class="input100" onchange="pwlengthch()" name="pw">
@@ -110,7 +113,7 @@
 						</span>
 					</div>
 					<div class="wrap-input100 validate-input">
-						<input type="text" id="name" placeholder="이름" class="input100" name="name">
+						<input type="text" id="name" placeholder="이름" class="input100" name="name" value="${NaverDto.name }">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>

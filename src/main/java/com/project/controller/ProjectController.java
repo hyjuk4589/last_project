@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.project.dto.UserDTO;
@@ -17,20 +18,15 @@ public class ProjectController {
 	@Autowired
 	private ProjectService service;
 	
+	
 	@RequestMapping("index")
 	public String index_run() {
 		return "default/index";
 	}
 	
-	@RequestMapping("login")
-	public String login(){
-		return "login&join/login";
-	}
 	
-	@RequestMapping("logout")
-	public String logout() {
-		return "login&join/logoutPage";
-	}
+	
+	
 	@RequestMapping("loginchk")
 	public String loginch(@RequestParam String id, @RequestParam String pw,HttpServletRequest request) {
 		boolean chk = service.loginch(id,pw);
@@ -79,14 +75,6 @@ public class ProjectController {
 	}
 	
 
-	@RequestMapping("naverLogin")
-	public String naverLogin(HttpSession session) {
-		return "login&join/naverLogin";
-	}
-	
-	@RequestMapping("callback")
-	public String navLogin(HttpServletRequest request) throws Exception {	
-		return "login&join/CallBack";
-	}	
+
 
 }

@@ -55,14 +55,16 @@
 							Login
 						</button>
 					</div>
+					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn-naver" onclick=location.href='naverLogin'>
-							Naver
+						<button class="login100-form-btn-naver" onclick="location.href='${url }'">
+							Naver 회원가입
 						</button>
 					</div>
+					
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn-facebook" onclick="setParentText()">
-							FaceBook
+							FaceBook 회원가입
 						</button>
 					</div>
 					
