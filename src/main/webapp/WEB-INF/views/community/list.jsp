@@ -58,7 +58,7 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 			<a class="title" href="view" name="title">
 			${dto.title }</a></td>
 			<td>${dto.writer }</td>
-			<td>${dto.regdate }</td>
+			<td style="font-size: 2px;">${dto.regdate }</td>
 			<td>${dto.viewcnt }</td>
 		</tr>
 		</c:forEach>

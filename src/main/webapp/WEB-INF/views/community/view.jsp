@@ -66,7 +66,7 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
             </tr>
         </tbody>
     </table>
-    <a href="#this" id="list" class="btn">목록으로</a>
+    <a href="list" id="list" class="btn">목록으로</a>
     <a href="#this" id="modify" class="btn">수정하기</a>
  </div>       
 

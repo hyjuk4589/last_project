@@ -1,6 +1,7 @@
 package com.project.service;
 
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 import javax.inject.Inject;
@@ -21,6 +22,8 @@ public class CommunityServiceImpl implements CommunityService {
 		
 		return dao.listAll();
 	}
+
+	
 	
 	
 	

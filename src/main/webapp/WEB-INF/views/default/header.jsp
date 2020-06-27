@@ -83,7 +83,7 @@ body, html {
 <body>
 <!-- height: 200%;  -->
 <div id="fixed">
-	<div><h1><a href="/Tiffany/default/index" style="color: black;">Brand</a></h1></div>
+	<div><h1><a href="index" style="color: black;">Brand</a></h1></div>
 		<div>
 		<nav>
 			<div class="dropdown">
