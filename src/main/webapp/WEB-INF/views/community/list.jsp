@@ -54,7 +54,9 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 		<c:forEach var="dto" items="${list}">
 		<tr>
 			<td>${dto.bno }</td>
-			<td>${dto.title }</td>
+			<td><input type="hidden" id="title" value="${dto.bno}"/>
+			<a class="title" href="view" name="title">
+			${dto.title }</a></td>
 			<td>${dto.writer }</td>
 			<td>${dto.regdate }</td>
 			<td>${dto.viewcnt }</td>

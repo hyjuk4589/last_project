@@ -30,6 +30,11 @@ public class CommunityController {
 
 	}
 	
+	@RequestMapping("view")
+	public String view() {
+		return "community/view";
+	}
+	
 	
 	@RequestMapping("notice")
 	public String notice() {
