@@ -5,6 +5,8 @@
 <configuration>
    <typeAliases>
 		<typeAlias alias="userdto" type="com.project.dto.UserDTO"/>
-		<typeAlias alias="listdto" type="com.project.dto.ListDTO"/>
+		<typeAlias alias="dressdto" type="com.project.dto.DressDTO"/>
+		<typeAlias alias="bagdto" type="com.project.dto.BagDTO"/>
+		<typeAlias alias="earringdto" type="com.project.dto.EarringDTO"/>
    </typeAliases>
 </configuration>

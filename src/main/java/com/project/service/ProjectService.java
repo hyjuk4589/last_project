@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
-import com.project.dao.ListDAO;
+import com.project.dao.BagListDAO;
 import com.project.dao.UserDAO;
-import com.project.dto.ListDTO;
+import com.project.dto.DressDTO;
 import com.project.dto.UserDTO;
 
 @Service
@@ -18,7 +18,7 @@ public class ProjectService {
 	@Autowired
 	private UserDAO userdao;
 	@Autowired
-	private ListDAO listdao;
+	private BagListDAO listdao;
 	
 	public void insert(UserDTO dto) {
 		userdao.insert(dto);
@@ -53,7 +53,7 @@ public class ProjectService {
 	}
 	
 	public void body(Model model) {
-		List<ListDTO> l = listdao.selectAll();
+		List<DressDTO> l = listdao.selectAll();
 		ArrayList<String> arr= new ArrayList<String>();
 		ArrayList<String> arr2= new ArrayList<String>();
 		for(int i=0;i<l.size();i++) {

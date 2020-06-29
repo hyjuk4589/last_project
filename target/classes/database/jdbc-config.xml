@@ -18,4 +18,5 @@
 		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
 	</bean>  
 	
+	
 </beans>
