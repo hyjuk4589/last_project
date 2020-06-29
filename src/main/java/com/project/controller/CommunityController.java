@@ -26,14 +26,17 @@ public class CommunityController {
 	public ModelAndView list() {
 		List<CommnuityDTO> list = service.listAll();
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("community/list");
 		mav.addObject("list",list);
+		mav.setViewName("community/list");
 		return mav;
 
 	}
 	
 	@RequestMapping("view")
-	public String view() {
+	public String view(CommnuityDTO dto, Model model) {
+		service.count(dto);
+		service.view(dto,model);
+		
 		return "community/view";
 	}
 	

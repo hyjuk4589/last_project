@@ -48,20 +48,20 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
           <tbody>
             <tr>
                 <th>제목</th>
-                <td>${dto.title}</td>
+                <td>${view.title}</td>
                 <th>조회수</th>
-                <td>${dto.viewcnt }</td>
+                <td>${view.viewcnt }</td>
             </tr>
             <tr>
                 <th>작성자</th>
-                <td>${dto.writer }</td>
+                <td>${view.writer }</td>
                 <th>작성시간</th>
-                <td>${dto.regdate }</td>
+                <td>${view.regdate }</td>
             </tr>
             <tr>
                 <th>내용</th>
                 <td colspan="3">
-                    ${dto.content }
+                    ${view.content }
                 </td>
             </tr>
         </tbody>

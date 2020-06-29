@@ -19,4 +19,15 @@ public class CommnuityDAO {
 	public List<CommnuityDTO> listAll() {
 		return sqlSession.selectList(namepasce+".selectAll_Commnuity");
 	}
+
+	public CommnuityDTO view(CommnuityDTO dto) {
+		return sqlSession.selectOne(namepasce+".view_Commnuity",dto);
+	}
+
+	public void count(CommnuityDTO dto) {
+		sqlSession.update(namepasce+".count_Commnuity",dto);
+		
+	}
+	
+	
 }
