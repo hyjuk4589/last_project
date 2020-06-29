@@ -3,6 +3,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.http.HttpSession;
+import javax.swing.JOptionPane;
+
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -60,6 +62,7 @@ public class LoginController {
 "message":"success",
 "response":{"id":"33666449","nickname":"shinn****","age":"20-29","gender":"M","email":"sh@naver.com","name":"\uc2e0\ubc94\ud638"}}
 		 **/
+		
 		//2. String형식인 apiResult를 json형태로 바꿈
 		JSONParser parser = new JSONParser();
 		Object obj = parser.parse(apiResult);
@@ -81,25 +84,21 @@ public class LoginController {
 		
 		//4.파싱 닉네임 세션으로 저장
 		
-//		if(dao.select(id) ==null) {
+		if(dao.select(id) ==null) {
 			UserDTO dto = new UserDTO();
 			dto.setId(id);dto.setName(name);
 			
 			model.addAttribute("NaverDto", dto);
 			return "login&join/join";
-//		}else {
-//			System.out.println("이미존재하는 회원입니다");
-//			return "redirect:index";
-//		}
-//		
-		//"nid.naver.com/oauth2.0/token?grant_type=delete&client_id=Kw8vD_2MRNtNf4TERrlM&client_secret=nfGVNN_nu7&access_token="
-//		+ "AAAAN_LCbVdhtfBQxzlMnQ2eqTVupLkpDvSCH4p7AzX6pOEu8Km7G0722fmlWmrn9haz_6BRsm_4X_DNGYoadZNOO7k&service_provider=NAVER";
-			
-//			<form action="fileUpload" method="post" enctype="multipart/form-data" name="fname" target="param">
-//			<input type="file" id="file" name="file" onchange="changeValue(this)" style="display:none; "/>
-//		</form>
-//		<iframe id="if" name="param" style="display:none;"></iframe>
+		}
+		else {
+			System.out.println("이미존재하는 회원입니다");
+			JOptionPane.showMessageDialog(null, "이미존재하는 회원이다!");
+			return "redirect:index";
+		}
+		
 	}
+	
 	
 	@RequestMapping("logout")
 	public String logout(HttpSession session) {

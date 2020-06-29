@@ -18,11 +18,35 @@
 <title>Insert title here</title>
 </head>
 <body>
+<iframe src="http://nid.naver.com/nidlogin.logout" style="visibility:hidden;display:none"></iframe>
+<script type="text/javascript">
+function deltoken(){
+	$.ajax({
+		url:"deltoken",
+		type:"GET",
+	success: function(){
+		location.href="nid.naver.com/oauth2.0/token?grant_type=delete&client_id=Kw8vD_2MRNtNf4TERrlM&client_secret=nfGVNN_nu7&access_token="
+			+ "AAAAN_LCbVdhtfBQxzlMnQ2eqTVupLkpDvSCH4p7AzX6pOEu8Km7G0722fmlWmrn9haz_6BRsm_4X_DNGYoadZNOO7k&service_provider=NAVER";
+		
+	},error: function(){
+		alert("문제가 발생했습니다")
+	}
+	})
+}
+function pagereturn(){
+	
+	$.each(list,function(index,item){
+		
+	})
+	
+	$("#").html(html)
+	
+}
+
+</script>
+
 
 	<script type="text/javascript">
-	
-	
-	
 		function ch() {
 			if (document.getElementById("id").value == "") {
 				alert("아이디 칸이 비어있습니다.")
@@ -160,6 +184,6 @@
 		})
 	</script>
 	<script src="resources/js/main.js"></script>
-
+	
 </body>
 </html>
