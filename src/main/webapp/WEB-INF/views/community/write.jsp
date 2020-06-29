@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
 <style type="text/css">
 .div1 {
 padding-top: 200px;
@@ -36,40 +37,25 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 </head>
 <body>
 <jsp:include page="../default/header.jsp"/>
-<div align="center" class="div1">
-   <table class="board_view">
-        <caption>상세보기</caption>
-        <colgroup>
-            <col width="15%">
-            <col width="35%">
-            <col width="15%">
-            <col width="*">
-        </colgroup>
-          <tbody>
-            <tr>
-                <th>제목</th>
-                <td>${view.title}</td>
-                <th>조회수</th>
-                <td>${view.viewcnt }</td>
-            </tr>
-            <tr>
-                <th>작성자</th>
-                <td>${view.writer }</td>
-                <th>작성시간</th>
-                <td>${view.regdate }</td>
-            </tr>
-            <tr style="height:300px;">
-                <th>내용</th>
-                <td colspan="3">
-                    ${view.content }
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <a href="list" id="list" class="btn">목록으로</a>
-    <a href="#this" id="modify" class="btn">수정하기</a>
- </div>       
-
+<div class="div1">
+	<form action="save_write">
+	<div>
+		제목 : 
+		<input name="title" id="title" size="50" placeholder="제목을 입력하세요.">
+	</div>
+	<div>
+		내용 :
+		<textarea name="content" id="content" rows="5" cols="100" placeholder="내용을 입력하세요."></textarea>
+	</div>
+	<div>
+		이름 :
+		<input name="writer" id="writer" placeholder="이름을 입력하세요." >
+	</div>
+	<div>
+		<button type="submit">확인</button>
+	</div>
+	</form>
+</div>
 <jsp:include page="../default/footer.jsp"/>
 </body>
 </html>

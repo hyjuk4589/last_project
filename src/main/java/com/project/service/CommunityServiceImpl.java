@@ -35,6 +35,11 @@ public class CommunityServiceImpl implements CommunityService {
 		
 	}
 
+	@Override
+	public void save_write(CommnuityDTO dto) {
+		dao.save_write(dto);
+	}
+
 	
 	
 	

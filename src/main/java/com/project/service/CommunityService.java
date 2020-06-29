@@ -19,4 +19,6 @@ public interface CommunityService {
 
 	public void count(CommnuityDTO dto);
 
+	public void save_write(CommnuityDTO dto);
+
 }

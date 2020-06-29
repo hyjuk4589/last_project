@@ -40,6 +40,17 @@ public class CommunityController {
 		return "community/view";
 	}
 	
+	@RequestMapping("write")
+	public String write() {
+		return "community/write";
+	}
+	
+	@RequestMapping("save_write")
+	public String save_write(CommnuityDTO dto) {
+		service.save_write(dto);
+		return "redirect:list";
+	}
+	
 	
 	@RequestMapping("notice")
 	public String notice() {

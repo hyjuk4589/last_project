@@ -64,7 +64,7 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 		</c:forEach>
 		<tr>
 			<td colspan="5" style="text-align: center;">
-				<a href="write_view.jsp">글작성</a>
+				<a href="write">글작성</a>
 			</td>
 		</tr>
 	</table>

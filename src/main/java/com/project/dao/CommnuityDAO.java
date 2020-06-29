@@ -28,6 +28,11 @@ public class CommnuityDAO {
 		sqlSession.update(namepasce+".count_Commnuity",dto);
 		
 	}
+
+	public void save_write(CommnuityDTO dto) {
+		sqlSession.insert(namepasce+".insert_Commnuity",dto);
+		
+	}
 	
 	
 }
