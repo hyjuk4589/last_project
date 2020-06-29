@@ -24,7 +24,10 @@ public class ProjectController {
 		return "default/index";
 	}
 	
-	
+	@RequestMapping("error")
+	public String error() {
+		return "login&join/alert";
+	}
 	
 	
 	@RequestMapping("loginchk")

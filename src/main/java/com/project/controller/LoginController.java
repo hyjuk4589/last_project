@@ -93,8 +93,7 @@ public class LoginController {
 		}
 		else {
 			System.out.println("이미존재하는 회원입니다");
-			JOptionPane.showMessageDialog(null, "이미존재하는 회원이다!");
-			return "redirect:index";
+			return "redirect:error";
 		}
 		
 	}
