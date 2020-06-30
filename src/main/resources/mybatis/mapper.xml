@@ -24,6 +24,8 @@
 		select * from data_list
 	</select>
 	
+	<!-- Q&A 게시물 관련 -->
+	
 	<select id="selectAll_Commnuity" resultType="comdto">
 		select * from board_sys order by bno desc
 	</select>
@@ -33,10 +35,15 @@
 	<update id="count_Commnuity">
 		update board_sys set viewcnt = viewcnt + 1 where bno=#{bno}
 	</update>
+	<update id="update_Commnuity">
+		update board_sys set title=#{title}, content=#{content} where bno=#{bno}
+	</update>
 	<insert id="insert_Commnuity">
 		insert into board_sys (bno,title,content,writer) values((select nvl(max(bno)+1,1)from board_sys),#{title},#{content},#{writer} )
 	</insert>
-	
+	<delete id="delete_Commnuity">
+		delete from board_sys where bno=#{bno}
+	</delete>
 	
 	
 </mapper>

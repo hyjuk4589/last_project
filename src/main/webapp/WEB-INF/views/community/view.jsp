@@ -7,6 +7,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript" src="resources/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+// $(document).ready(function(){
+// 	$("btnDelete").click(function(){
+// 		document.form1.action = "delete";
+// 		document.form1.submit();
+// 	})
+// })
+
+</script>
+
+
 <style type="text/css">
 .div1 {
 padding-top: 200px;
@@ -37,6 +49,7 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 <body>
 <jsp:include page="../default/header.jsp"/>
 <div align="center" class="div1">
+<form method="post" action="update">
    <table class="board_view">
         <caption>상세보기</caption>
         <colgroup>
@@ -48,7 +61,9 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
           <tbody>
             <tr>
                 <th>제목</th>
-                <td>${view.title}</td>
+                <td>
+                <input name="title" id="title" size="80" value="${view.title}" placeholder="제목을 입력하세요.">
+                </td>
                 <th>조회수</th>
                 <td>${view.viewcnt }</td>
             </tr>
@@ -61,13 +76,18 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
             <tr style="height:300px;">
                 <th>내용</th>
                 <td colspan="3">
-                    ${view.content }
+                	<input name="content " id="content" style="height:200px;
+                	 width: 700px;" value="${view.title}" placeholder="내용을 입력해주세요.">
+   
                 </td>
             </tr>
         </tbody>
     </table>
     <a href="list" id="list" class="btn">목록으로</a>
-    <a href="#this" id="modify" class="btn">수정하기</a>
+    <input type="submit" value="수정하기">
+<%--     <a href="update?bno=${view.bno}" class="btn">수정하기</a>  --%>
+    <a href="delete?bno=${view.bno}" class="btn">삭제하기</a>
+    </form>
  </div>       
 
 <jsp:include page="../default/footer.jsp"/>

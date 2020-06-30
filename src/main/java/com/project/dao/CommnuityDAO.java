@@ -13,6 +13,7 @@ import com.project.dto.CommnuityDTO;
 public class CommnuityDAO {
 	@Inject
 	private SqlSession sqlSession;
+
 	
 	public static final String namepasce="com.project.mybatis.myMapper";
 	
@@ -33,6 +34,16 @@ public class CommnuityDAO {
 		sqlSession.insert(namepasce+".insert_Commnuity",dto);
 		
 	}
-	
-	
+
+	public void delete(CommnuityDTO dto) {
+		sqlSession.delete(namepasce+".delete_Commnuity",dto);
+	}
+
+	public void update(CommnuityDTO dto) {
+		sqlSession.update(namepasce+".update_Commnuity",dto);
+	}
+		
 }
+	
+	
+

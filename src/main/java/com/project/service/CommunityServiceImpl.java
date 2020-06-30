@@ -40,6 +40,20 @@ public class CommunityServiceImpl implements CommunityService {
 		dao.save_write(dto);
 	}
 
+	@Override
+	public void delete(CommnuityDTO dto) {
+		dao.delete(dto);
+		
+	}
+
+	@Override
+	public void update(CommnuityDTO dto) {
+		dao.update(dto);
+		
+	}
+	
+	
+
 	
 	
 	

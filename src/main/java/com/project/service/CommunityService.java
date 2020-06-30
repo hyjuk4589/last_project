@@ -21,4 +21,7 @@ public interface CommunityService {
 
 	public void save_write(CommnuityDTO dto);
 
+	public void delete(CommnuityDTO dto);
+
+	public void update(CommnuityDTO dto);
 }
