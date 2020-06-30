@@ -85,32 +85,25 @@
 	}
     // file창이 종료가 되면 실행
 	function changeValue(obj){
-		var form = $('#uploadForm')[0];
-	    var formData = new FormData(form);
-		$.ajax({
-	        url : 'fileUpload',
-	        type : 'POST',
-	        data : formData,
-	        contentType : false,
-	        processData : false,
-	        error : function(){
-                alert("에러") ;
-            },
-	        success : function(result){
-                alert(count)
-                id="myCanvas"+count
-                $('#in').append("<div id='image"+count+"' style='width: 50px; height: 50px;'><canvas id='myCanvas"+count+"'style='width: 50px; height: 50px;'></canvas></div>")
+		if (obj.files && obj.files[0]) {
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				alert(e.target.result)
+				alert(obj)
+				id="myCanvas"+count
+			    $('#in').append("<div id='image"+count+"' style='width: 50px; height: 50px;'><canvas id='myCanvas"+count+"'style='width: 50px; height: 50px;'></canvas></div>")
 				$("#image"+count).draggable();
-		      	img[count] = new Image();
-		      	g=img[count]
-		      	img[count].addEventListener('load',function(){
-		        	ctx[count] = document.getElementById(id).getContext("2d");
-		        	ctx[count].drawImage(g,0,0,300,150);
-		      	},false);
-		      	img[count].src="resources/img/right.png"
-		      	count++
-            }
-	    });
+			   	img[count] = new Image();
+			   	g=img[count]
+			   	img[count].addEventListener('load',function(){
+			     	ctx[count] = document.getElementById(id).getContext("2d");
+			     	ctx[count].drawImage(g,0,0,300,150);
+			   	},false);
+			   	img[count].src=e.target.result;
+			}
+			reader.readAsDataURL(obj.files[0]);
+		}
+	   	count++
 	}
 	
 	// 디자인하는방법 클릭시 함수 실행
@@ -199,9 +192,9 @@
 		</div>
 	</div>
 	
-	<form id="uploadForm">
-		<input type="file" id="file" name="file" onchange="changeValue(this)" style="display:none; "/>
-	</form>
+<!-- 	<form id="uploadForm"> -->
+	<input type="file" id="file" name="file" onchange="changeValue(this)" style="display:none; "/>
+<!-- 	</form> -->
 
 	<!-- 일부분 부분-->
 	<!-- 결과화면을 그려줄 canvas -->
