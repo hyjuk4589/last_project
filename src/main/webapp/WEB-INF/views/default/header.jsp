@@ -5,57 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<<<<<<< HEAD
-<style type="text/css">
-
-div#fixed { 
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-
-height: 75px;
-padding: 1rem;
-color: black;
-font-weight: bold;
-display: flex;
-justify-content: space-between;
-align-items: center;
-
- }
-h1 {
-	margin: 0;
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-nav { color: gray; }
- }
-a { text-decoration:none;  color: #000; !important  } 
-a:link { color: #000; text-decoration: none; } <!-- link : 방문전 링크 상태 -->
-a:visited {
-	color: #000; text-decoration: none; } <!-- visited : 방문후 링크 상태 -->
-a:hover { color: #000; text-decoration: none; } <!-- hover : 마우스 오버했을 때 링크 상태 -->
-a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 링크 상태 -->
-
-main { padding: 1rem; }
-
-body { 
-background: #EEE; }
-
-body, html {
-	
- }
- 
-.dropdown { position: relative; display: inline-block;}
-.dropdown-content {   display: none; position: absolute; background-color:#f1f1f1;
-			 min-width: 80px; min-height: 150px; text-align:center; right: 0px; 
-			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:Georgia;
-=======
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <link rel="stylesheet" type="text/css" href="resources/css/util.css?after">
 <link rel="stylesheet" type="text/css" href="resources/css/main.css?after">
@@ -64,7 +13,6 @@ body, html {
 .dropdown-content {   display: none; position: absolute; background-color:#f1f1f1;
 			 min-width: 80px; min-height: 150px; text-align:center; right: 0px; 
 			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:윤고딕;
->>>>>>> 2ebdad6dc5738bc61f9d4a1bfcc98af9733b2f5c
  z-index:1; }
 .dropdown-content a:hover { background-color: #ddd; }
 .dropdown:hover .dropdown-content { display: block; }
@@ -73,11 +21,7 @@ body, html {
 .dropdown1 { position: relative; display: inline-block;}
 .dropdown-content1 {   display: none; position: absolute; background-color:#f1f1f1;
 			 min-width: 100px; min-height: 150px; text-align:center; right: 0px;
-<<<<<<< HEAD
-			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:Georgia;
-=======
 			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:윤고딕;
->>>>>>> 2ebdad6dc5738bc61f9d4a1bfcc98af9733b2f5c
  z-index:1; }
 .dropdown-content1 a:hover { background-color: #ddd; }
 .dropdown1:hover .dropdown-content1 { display: block; }
@@ -86,11 +30,7 @@ body, html {
 .dropdown0 { position: relative; display: inline-block;}
 .dropdown-content0 {   display: none; position: absolute; background-color:#f1f1f1;
 			 min-width: 80px; min-height: 120px; text-align:center; right: 0px;
-<<<<<<< HEAD
-			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:Georgia;
-=======
 			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:윤고딕;
->>>>>>> 2ebdad6dc5738bc61f9d4a1bfcc98af9733b2f5c
  z-index:1; }
 .dropdown-content0 a:hover { background-color: #ddd; }
 .dropdown0:hover .dropdown-content0 { display: block; }
