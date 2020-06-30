@@ -56,9 +56,20 @@ public class ProjectController {
 		return "shop/cart";
 	}
 	
-	@RequestMapping("body")
+	@RequestMapping("dress")
 	public String body(Model model) {
-		service.body(model);
-		return "default/body";
+		service.dress(model);
+		return "default/dress";
 	}
+	@RequestMapping("bag")
+	public String bag(Model model) {
+		service.bag(model);
+		return "default/bag";
+	}
+	@RequestMapping("earring")
+	public String earring(Model model) {
+		service.earring(model);
+		return "default/earring";
+	}
+	
 }

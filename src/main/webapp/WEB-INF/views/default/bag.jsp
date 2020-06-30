@@ -43,10 +43,11 @@
 			number=0
 			l=${list_img}
 			r=${list_product}
+			z=${list_count}
 			for(i=0;i<size;i++){
 				s=l[i]
 				p=r[i]
-				
+				zz=z[i]
 				if(i<sessionStorage.getItem("last") && i>=sessionStorage.getItem("start")){
 // 					alert("i : "+i+", last : "+sessionStorage.getItem("last")+", start : "+sessionStorage.getItem("start"))
 					if(i%3==0) {
@@ -54,7 +55,7 @@
 						$('#table').append("<tr style='height:500px' id='tr"+c+"'></tr>");
 					}
 					$("#tr"+c).append("<td> <img onmouseleave=style='width:312px;height:390px;margin-left:10px;' onmouseover=style='width:312px;height:390px;margin-left:10px;opacity:0.5'"+
-							" style='width: 312px; height: 390px; margin-left: 10px;' src='"+s+"' onclick=location.href='design'> <p align='center' style='margin-top: 5px;'>"+p+"</p></td>");
+							" style='width: 312px; height: 390px; margin-left: 10px;' src='"+s+"' onclick=location.href='design'> <p align='center' style='margin-top: 5px;'>"+p+"</p><p align='center' style='margin-top: 5px;'>"+zz+"</p></td>");
 				}
 				number++;
 			}

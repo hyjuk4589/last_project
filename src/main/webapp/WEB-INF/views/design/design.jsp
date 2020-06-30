@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1>디자인 할 이미지</h1>
+<%-- 	${product} --%>
 </body>
 </html>
