@@ -20,18 +20,20 @@
 <title>Insert title here</title>
 </head>
 <body>
+<iframe src="http://nid.naver.com/nidlogin.logout" style="visibility:hidden;display:none"></iframe>
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-			
+			<span class="login100-form-title">
+						Member Login
+					</span>
 				<div class="login100-pic js-tilt" data-tilt>
+				
 					<img src="resources/images/80678738_2416624028588147_5452304186879982403_n.jpg" alt="IMG">
 				</div>
 
 				<form class="login100-form validate-form" action="loginchk" id="cInput">
-					<span class="login100-form-title">
-						Member Login
-					</span>
+					
 
 					<div class="wrap-input100 validate-input" data-validate = "id is required">
 						<input class="input100" type="text" name="id" placeholder="아이디를 입력하세요"> 
@@ -50,8 +52,20 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" onclick="setParentText()">
+						<button class="login100-form-btn-login" onclick="setParentText()">
 							Login
+						</button>
+					</div>
+				
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn-naver" onclick="location.href='${url }'">
+							Naver 회원가입
+						</button>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn-facebook" onclick="setParentText()">
+							FaceBook 회원가입
 						</button>
 					</div>
 					

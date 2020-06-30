@@ -3,6 +3,8 @@ package com.project.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -48,15 +50,11 @@ public class ProjectService {
 	}
 	
 	// 로그인시 ID, PW 확인
-	public String loginch(Model model, String id, String pw) {
+	public boolean loginch(String id, String pw) {
 		if(userdao.select(id).getId().equals(id) && userdao.select(id).getPw().equals(pw)) {
-			model.addAttribute("loginch_result_id",userdao.select(id).getId());
-			model.addAttribute("loginch_result_pw",userdao.select(id).getPw());
-			return "redirect:index";
+			return true;
 		}else {
-			model.addAttribute("loginch_result_id","");
-			model.addAttribute("loginch_result_pw","");
-			return "login&join/login";
+			return false;
 		}
 	}
 	

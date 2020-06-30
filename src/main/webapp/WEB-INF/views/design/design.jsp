@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 	
 </head>
-<<<<<<< HEAD
 <% request.setCharacterEncoding("utf-8"); %>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="resources/jquery-3.2.1.min.js"></script>
