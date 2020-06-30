@@ -5,7 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<<<<<<< HEAD
 <style type="text/css">
 
 div#fixed { 
@@ -55,7 +54,6 @@ body, html {
 .dropdown-content {   display: none; position: absolute; background-color:#f1f1f1;
 			 min-width: 80px; min-height: 150px; text-align:center; right: 0px; 
 			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:Georgia;
-=======
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <link rel="stylesheet" type="text/css" href="resources/css/util.css?after">
 <link rel="stylesheet" type="text/css" href="resources/css/main.css?after">
@@ -64,7 +62,6 @@ body, html {
 .dropdown-content {   display: none; position: absolute; background-color:#f1f1f1;
 			 min-width: 80px; min-height: 150px; text-align:center; right: 0px; 
 			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:윤고딕;
->>>>>>> 2ebdad6dc5738bc61f9d4a1bfcc98af9733b2f5c
  z-index:1; }
 .dropdown-content a:hover { background-color: #ddd; }
 .dropdown:hover .dropdown-content { display: block; }
@@ -73,11 +70,7 @@ body, html {
 .dropdown1 { position: relative; display: inline-block;}
 .dropdown-content1 {   display: none; position: absolute; background-color:#f1f1f1;
 			 min-width: 100px; min-height: 150px; text-align:center; right: 0px;
-<<<<<<< HEAD
-			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:Georgia;
-=======
 			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:윤고딕;
->>>>>>> 2ebdad6dc5738bc61f9d4a1bfcc98af9733b2f5c
  z-index:1; }
 .dropdown-content1 a:hover { background-color: #ddd; }
 .dropdown1:hover .dropdown-content1 { display: block; }
@@ -86,11 +79,7 @@ body, html {
 .dropdown0 { position: relative; display: inline-block;}
 .dropdown-content0 {   display: none; position: absolute; background-color:#f1f1f1;
 			 min-width: 80px; min-height: 120px; text-align:center; right: 0px;
-<<<<<<< HEAD
-			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:Georgia;
-=======
 			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);font-weight:normal;font-size:20px;font-family:윤고딕;
->>>>>>> 2ebdad6dc5738bc61f9d4a1bfcc98af9733b2f5c
  z-index:1; }
 .dropdown-content0 a:hover { background-color: #ddd; }
 .dropdown0:hover .dropdown-content0 { display: block; }

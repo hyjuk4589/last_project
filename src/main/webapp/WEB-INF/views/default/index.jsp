@@ -7,25 +7,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
 </head>
-<<<<<<< HEAD
 <style type="text/css">
    .font{ font-family: Yu Gothic;}
    .img1 { display: inline; }
    .img2 {  }
 </style>
-=======
 
->>>>>>> 2ebdad6dc5738bc61f9d4a1bfcc98af9733b2f5c
 <link rel="stylesheet" type="text/css" href="resources/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="resources/vendor/animate/animate.css">
 <link rel="stylesheet" type="text/css" href="resources/vendor/css-hamburgers/hamburgers.min.css">
 <link rel="stylesheet" type="text/css" href="resources/vendor/select2/select2.min.css">
-<<<<<<< HEAD
 <body>
-<<<<<<< HEAD
-<<<<<<< HEAD
 <%@include file="header.jsp" %>
-=======
 <link rel="stylesheet" type="text/css" href="resources/css/util.css?after">
 <link rel="stylesheet" type="text/css" href="resources/css/main.css?after">
 <body>
@@ -106,11 +99,5 @@
 <%@include file="footer.jsp" %>
 
 
-=======
-asdf
->>>>>>> woo
-=======
-asdf
->>>>>>> jang
 </body>
 </html>

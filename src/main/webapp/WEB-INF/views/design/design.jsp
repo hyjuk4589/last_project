@@ -201,10 +201,5 @@
 	<canvas id="canvas" width="900" height="600"
 		style="border: 1px solid #d3d3d3; display:none;">
 	</canvas>
-=======
-<body>
-	<h1>디자인 할 이미지</h1>
-<%-- 	${product} --%>
->>>>>>> jang
 </body>
 </html>
