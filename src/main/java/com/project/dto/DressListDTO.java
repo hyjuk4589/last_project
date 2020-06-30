@@ -1,6 +1,6 @@
 package com.project.dto;
 
-public class DressDTO {
+public class DressListDTO {
 	private String img;
 	private String product;
 	private int price;
@@ -29,5 +29,4 @@ public class DressDTO {
 	public void setCount(int count) {
 		this.count = count;
 	}
-	
 }

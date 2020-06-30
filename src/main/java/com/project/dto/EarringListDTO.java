@@ -1,10 +1,18 @@
 package com.project.dto;
 
-public class BagDTO {
+public class EarringListDTO {
 	private String img;
 	private String product;
 	private int price;
 	private int count;
+	private String aa;
+	
+	public String getAa() {
+		return aa;
+	}
+	public void setAa(String aa) {
+		this.aa = aa;
+	}
 	public String getImg() {
 		return img;
 	}

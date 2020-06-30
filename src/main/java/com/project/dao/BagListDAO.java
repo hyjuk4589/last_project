@@ -6,13 +6,14 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.project.dto.DressDTO;
+import com.project.dto.BagListDTO;
 
 @Repository
 public class BagListDAO {
-	@Autowired private SqlSession sqlSession;
+	@Autowired
+	private  SqlSession sqlSession;
 	public static final String namepasce="com.project.mybatis.myMapper";
-	public List<DressDTO> selectAll() {
-		return sqlSession.selectList(namepasce+".selectAll_bagList");
+	public List<BagListDTO> selectAll() {
+		return sqlSession.selectList(namepasce+".baselectAll_List");
 	}
 }

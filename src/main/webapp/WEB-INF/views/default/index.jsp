@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="resources/vendor/css-hamburgers/hamburgers.min.css">
 <link rel="stylesheet" type="text/css" href="resources/vendor/select2/select2.min.css">
 <body>
+<<<<<<< HEAD
 <%@include file="header.jsp" %>
 
 <div  style=" width: 600px; text-align: center; padding-top: 120px; ">
@@ -53,5 +54,8 @@
 <%@include file="footer.jsp" %>
 
 
+=======
+asdf
+>>>>>>> woo
 </body>
 </html>

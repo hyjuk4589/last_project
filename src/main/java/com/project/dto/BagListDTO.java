@@ -1,6 +1,6 @@
 package com.project.dto;
 
-public class EarringDTO {
+public class BagListDTO {
 	private String img;
 	private String product;
 	private int price;

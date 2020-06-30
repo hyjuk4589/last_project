@@ -10,7 +10,11 @@ import org.springframework.ui.Model;
 
 import com.project.dao.BagListDAO;
 import com.project.dao.UserDAO;
-import com.project.dto.DressDTO;
+import com.project.dao.DressListDAO;
+import com.project.dao.EarringListDAO;
+import com.project.dto.BagListDTO;
+import com.project.dto.DressListDTO;
+import com.project.dto.EarringListDTO;
 import com.project.dto.UserDTO;
 
 @Service
@@ -18,7 +22,11 @@ public class ProjectService {
 	@Autowired
 	private UserDAO userdao;
 	@Autowired
-	private BagListDAO listdao;
+	private DressListDAO drlistdao;
+	@Autowired
+	private BagListDAO balistdao;
+	@Autowired
+	private EarringListDAO ealistdao;
 	
 	public void insert(UserDTO dto) {
 		userdao.insert(dto);
@@ -52,15 +60,57 @@ public class ProjectService {
 		}
 	}
 	
-	public void body(Model model) {
-		List<DressDTO> l = listdao.selectAll();
+	public void dress(Model model) {
+		List<DressListDTO> l = drlistdao.selectAll();
 		ArrayList<String> arr= new ArrayList<String>();
 		ArrayList<String> arr2= new ArrayList<String>();
+		ArrayList<String> arr3= new ArrayList<String>();
+		ArrayList<String> arr4= new ArrayList<String>();
 		for(int i=0;i<l.size();i++) {
 			arr.add("'"+l.get(i).getImg()+"'");
 			arr2.add("'"+l.get(i).getProduct()+"'");
+			arr3.add("'"+l.get(i).getPrice()+"'");
+			arr4.add("'"+l.get(i).getCount()+"'");			
 		}
 		model.addAttribute("list_img",arr);
 		model.addAttribute("list_product",arr2);
+		model.addAttribute("list_price",arr3);
+		model.addAttribute("list_count",arr4);
+	}
+	
+	public void bag(Model model) {
+		List<BagListDTO> l = balistdao.selectAll();
+		ArrayList<String> arr= new ArrayList<String>();
+		ArrayList<String> arr2= new ArrayList<String>();
+		ArrayList<String> arr3= new ArrayList<String>();
+		ArrayList<String> arr4= new ArrayList<String>();
+		for(int i=0;i<l.size();i++) {
+			arr.add("'"+l.get(i).getImg()+"'");
+			arr2.add("'"+l.get(i).getProduct()+"'");
+			arr3.add("'"+l.get(i).getPrice()+"'");
+			arr4.add("'"+l.get(i).getCount()+"'");			
+		}
+		model.addAttribute("list_img",arr);
+		model.addAttribute("list_product",arr2);
+		model.addAttribute("list_price",arr3);
+		model.addAttribute("list_count",arr4);
+	}
+	
+	public void earring(Model model) {
+		List<EarringListDTO> l = ealistdao.selectAll();
+		ArrayList<String> arr= new ArrayList<String>();
+		ArrayList<String> arr2= new ArrayList<String>();
+		ArrayList<String> arr3= new ArrayList<String>();
+		ArrayList<String> arr4= new ArrayList<String>();
+		for(int i=0;i<l.size();i++) {
+			arr.add("'"+l.get(i).getImg()+"'");
+			arr2.add("'"+l.get(i).getProduct()+"'");
+			arr3.add("'"+l.get(i).getPrice()+"'");
+			arr4.add("'"+l.get(i).getCount()+"'");			
+		}
+		model.addAttribute("list_img",arr);
+		model.addAttribute("list_product",arr2);
+		model.addAttribute("list_price",arr3);
+		model.addAttribute("list_count",arr4);
 	}
 }

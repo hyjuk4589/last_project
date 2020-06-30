@@ -43,10 +43,13 @@
 			number=0
 			l=${list_img}
 			r=${list_product}
+			u=${list_price}
+			z=${list_count}
 			for(i=0;i<size;i++){
-				s=l[i]
-				p=r[i]
-				
+				s=l[i]	//이미지
+				p=r[i]	//상품이름
+				uu=u[i]	//가격
+				zz=z[i]	//리뷰
 				if(i<sessionStorage.getItem("last") && i>=sessionStorage.getItem("start")){
 // 					alert("i : "+i+", last : "+sessionStorage.getItem("last")+", start : "+sessionStorage.getItem("start"))
 					if(i%3==0) {
@@ -54,7 +57,7 @@
 						$('#table').append("<tr style='height:500px' id='tr"+c+"'></tr>");
 					}
 					$("#tr"+c).append("<td> <img onmouseleave=style='width:312px;height:390px;margin-left:10px;' onmouseover=style='width:312px;height:390px;margin-left:10px;opacity:0.5'"+
-							" style='width: 312px; height: 390px; margin-left: 10px;' src='"+s+"' onclick=location.href='design'> <p align='center' style='margin-top: 5px;'>"+p+"</p></td>");
+" style='width: 312px; height: 390px; margin-left: 10px;' src='"+s+"' onclick=location.href='design'> <p align='center' style='margin-top: 5px; font-family:궁서체;'>"+p+"</p><p align='center' style='margin-top: 5px; font-family:궁서체;'>"+"가격 :&nbsp;"+uu+"</p><p align='center' style='margin-top: 5px; color:gray;'>"+"리뷰 :&nbsp;"+zz+"</p>");
 				}
 				number++;
 			}
