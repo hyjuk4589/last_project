@@ -25,7 +25,7 @@
 	</select>
 	
 	<select id="selectAll_Commnuity" resultType="comdto">
-		select * from board_sys
+		select * from board_sys order by bno desc
 	</select>
 	<select id="view_Commnuity" resultType="comdto">
 		select * from board_sys where bno=#{bno}
