@@ -99,7 +99,7 @@
 			     	ctx[count] = document.getElementById(id).getContext("2d");
 			     	ctx[count].drawImage(g,0,0,300,150);
 			   	},false);
-			   	img[count].src=e.target.result
+			   	img[count].src=e.target.result;
 			}
 			reader.readAsDataURL(obj.files[0]);
 		}
@@ -192,9 +192,9 @@
 		</div>
 	</div>
 	
-	<form id="uploadForm">
-		<input type="file" id="file" name="file" onchange="changeValue(this)" style="display:none; "/>
-	</form>
+<!-- 	<form id="uploadForm"> -->
+	<input type="file" id="file" name="file" onchange="changeValue(this)" style="display:none; "/>
+<!-- 	</form> -->
 
 	<!-- 일부분 부분-->
 	<!-- 결과화면을 그려줄 canvas -->
