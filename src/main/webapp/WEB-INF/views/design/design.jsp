@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 	
 </head>
+<<<<<<< HEAD
 <% request.setCharacterEncoding("utf-8"); %>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="resources/jquery-3.2.1.min.js"></script>
@@ -201,5 +202,10 @@
 	<canvas id="canvas" width="900" height="600"
 		style="border: 1px solid #d3d3d3; display:none;">
 	</canvas>
+=======
+<body>
+	<h1>디자인 할 이미지</h1>
+<%-- 	${product} --%>
+>>>>>>> jang
 </body>
 </html>

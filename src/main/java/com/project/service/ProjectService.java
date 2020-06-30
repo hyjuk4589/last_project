@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
 import com.project.dao.BagListDAO;
-import com.project.dao.UserDAO;
 import com.project.dao.DressListDAO;
 import com.project.dao.EarringListDAO;
+import com.project.dao.UserDAO;
 import com.project.dto.BagListDTO;
 import com.project.dto.DressListDTO;
 import com.project.dto.EarringListDTO;
@@ -69,7 +69,7 @@ public class ProjectService {
 		for(int i=0;i<l.size();i++) {
 			arr.add("'"+l.get(i).getImg()+"'");
 			arr2.add("'"+l.get(i).getProduct()+"'");
-			arr3.add("'"+l.get(i).getPrice()+"'");
+			arr3.add("'"+l.get(i).getPrice()+"'");			
 			arr4.add("'"+l.get(i).getCount()+"'");			
 		}
 		model.addAttribute("list_img",arr);
@@ -83,17 +83,14 @@ public class ProjectService {
 		ArrayList<String> arr= new ArrayList<String>();
 		ArrayList<String> arr2= new ArrayList<String>();
 		ArrayList<String> arr3= new ArrayList<String>();
-		ArrayList<String> arr4= new ArrayList<String>();
 		for(int i=0;i<l.size();i++) {
 			arr.add("'"+l.get(i).getImg()+"'");
 			arr2.add("'"+l.get(i).getProduct()+"'");
-			arr3.add("'"+l.get(i).getPrice()+"'");
-			arr4.add("'"+l.get(i).getCount()+"'");			
+			arr3.add("'"+l.get(i).getCount()+"'");			
 		}
 		model.addAttribute("list_img",arr);
 		model.addAttribute("list_product",arr2);
-		model.addAttribute("list_price",arr3);
-		model.addAttribute("list_count",arr4);
+		model.addAttribute("list_count",arr3);
 	}
 	
 	public void earring(Model model) {
@@ -101,16 +98,13 @@ public class ProjectService {
 		ArrayList<String> arr= new ArrayList<String>();
 		ArrayList<String> arr2= new ArrayList<String>();
 		ArrayList<String> arr3= new ArrayList<String>();
-		ArrayList<String> arr4= new ArrayList<String>();
 		for(int i=0;i<l.size();i++) {
 			arr.add("'"+l.get(i).getImg()+"'");
 			arr2.add("'"+l.get(i).getProduct()+"'");
-			arr3.add("'"+l.get(i).getPrice()+"'");
-			arr4.add("'"+l.get(i).getCount()+"'");			
+			arr3.add("'"+l.get(i).getCount()+"'");			
 		}
 		model.addAttribute("list_img",arr);
 		model.addAttribute("list_product",arr2);
-		model.addAttribute("list_price",arr3);
-		model.addAttribute("list_count",arr4);
+		model.addAttribute("list_count",arr3);
 	}
 }

@@ -5,14 +5,11 @@
 <configuration>
    <typeAliases>
 		<typeAlias alias="userdto" type="com.project.dto.UserDTO"/>
-<<<<<<< HEAD
-		<typeAlias alias="dressdto" type="com.project.dto.DressDTO"/>
-		<typeAlias alias="bagdto" type="com.project.dto.BagDTO"/>
-		<typeAlias alias="earringdto" type="com.project.dto.EarringDTO"/>
-=======
 		<typeAlias alias="dresslistdto" type="com.project.dto.DressListDTO"/>
 		<typeAlias alias="baglistdto" type="com.project.dto.BagListDTO"/>
 		<typeAlias alias="earringlistdto" type="com.project.dto.EarringListDTO"/>
->>>>>>> woo
+		<typeAlias alias="dresslistdto" type="com.project.dto.DressListDTO"/>
+		<typeAlias alias="baglistdto" type="com.project.dto.BagListDTO"/>
+		<typeAlias alias="earringlistdto" type="com.project.dto.EarringListDTO"/>
    </typeAliases>
 </configuration>

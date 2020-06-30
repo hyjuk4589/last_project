@@ -20,15 +20,6 @@
 		update self_design set pw=#{pw}, name=#{name}, addr=#{add}, phon=#{phon} where id=#{id}
 	</update>
 	
-<<<<<<< HEAD
-	<select id="baglistdto" resultType="bagdto">
-		select * from bag_list
-	</select>
-	<select id="dresslistdto" resultType="dressdto">
-		select * from dress_list
-	</select>
-	<select id="earringlistdto" resultType="earringdto">
-=======
 	<select id="drselectAll_List" resultType="dresslistdto">
 		select * from dress_list
 	</select>
@@ -36,7 +27,6 @@
 		select * from bag_list
 	</select>
 	<select id="easelectAll_List" resultType="earringlistdto">
->>>>>>> woo
 		select * from earring_list
 	</select>
 </mapper>

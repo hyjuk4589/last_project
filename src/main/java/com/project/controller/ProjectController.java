@@ -71,4 +71,5 @@ public class ProjectController {
 		service.earring(model);
 		return "default/earring";
 	}
+	
 }

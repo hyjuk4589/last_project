@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="resources/vendor/select2/select2.min.css">
 <body>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <%@include file="header.jsp" %>
 
 <div  style=" width: 600px; text-align: center; padding-top: 120px; ">
@@ -57,5 +58,8 @@
 =======
 asdf
 >>>>>>> woo
+=======
+asdf
+>>>>>>> jang
 </body>
 </html>
