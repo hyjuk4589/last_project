@@ -12,12 +12,40 @@
 <link rel="stylesheet" type="text/css" href="resources/vendor/animate/animate.css">
 <link rel="stylesheet" type="text/css" href="resources/vendor/css-hamburgers/hamburgers.min.css">
 <link rel="stylesheet" type="text/css" href="resources/vendor/select2/select2.min.css">
-<link rel="stylesheet" type="text/css" href="resources/css/util.css">
-<link rel="stylesheet" type="text/css" href="resources/css/main.css">
+<link rel="stylesheet" type="text/css" href="resources/css/util.css?after">
+<link rel="stylesheet" type="text/css" href="resources/css/main.css?after">
 <script type="text/javascript" src="resources/vendor/jquery/jquery-3.2.1.min.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
+<iframe src="http://nid.naver.com/nidlogin.logout" style="visibility:hidden;display:none"></iframe>
+<script type="text/javascript">
+function deltoken(){
+	$.ajax({
+		url:"deltoken",
+		type:"GET",
+	success: function(){
+		location.href="nid.naver.com/oauth2.0/token?grant_type=delete&client_id=Kw8vD_2MRNtNf4TERrlM&client_secret=nfGVNN_nu7&access_token="
+			+ "AAAAN_LCbVdhtfBQxzlMnQ2eqTVupLkpDvSCH4p7AzX6pOEu8Km7G0722fmlWmrn9haz_6BRsm_4X_DNGYoadZNOO7k&service_provider=NAVER";
+		
+	},error: function(){
+		alert("문제가 발생했습니다")
+	}
+	})
+}
+function pagereturn(){
+	
+	$.each(list,function(index,item){
+		
+	})
+	
+	$("#").html(html)
+	
+}
+
+</script>
+
+
 	<script type="text/javascript">
 		function ch() {
 			if (document.getElementById("id").value == "") {
@@ -77,22 +105,22 @@
 <div class="limiter">
 		<div class="container-login100" align="center">
 			<div class="wrap-login100" align="center">
-			<div class="login100-pic js-tilt" data-tilt>
-				<img src="resources/images/80678738_2416624028588147_5452304186879982403_n.jpg" alt="IMG" style="padding:65px 0 0 0">
-			</div>
+			<h2>Self Design 계정 만들기</h2><br>
+<!-- 			<div class="login100-pic js-tilt" data-tilt> -->
+<!-- 				<img src="resources/images/80678738_2416624028588147_5452304186879982403_n.jpg" alt="IMG"> -->
+<!-- 			</div> -->
 				<div align="center">
-					<h2>Self Design 계정 만들기</h2><br>
+					
 					<form action="joinok" name="user" style="align:center;">
 		
 					<div class="wrap-input100 validate-input" align="center">
-						<input type="text" id="id" placeholder="아이디" class=input100 name="id">
+						<input type="text" id="id" placeholder="아이디" class=input100 name="id" value="${NaverDto.id }">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"  style="text-align:right;"></i>
 						</span>
 					</div>
 					
-						
 						
 					<div class="wrap-input100 validate-input">
 						<input type="text" id="pw" placeholder="비밀번호" class="input100" onchange="pwlengthch()" name="pw">
@@ -109,7 +137,7 @@
 						</span>
 					</div>
 					<div class="wrap-input100 validate-input">
-						<input type="text" id="name" placeholder="이름" class="input100" name="name">
+						<input type="text" id="name" placeholder="이름" class="input100" name="name" value="${NaverDto.name }">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -130,7 +158,7 @@
 						</span>
 					</div>
 					<div class="container-login100-form-btn">
-				<input type="button" class="login100-form-btn" onclick="al()" value="회원가입">
+				<input type="button" class="login100-form-btn-login" onclick="al()" value="회원가입">
 			</div>
 			
 			<label style="margin-right: 95px;" id="pw1"></label><br>
@@ -156,6 +184,6 @@
 		})
 	</script>
 	<script src="resources/js/main.js"></script>
-
+	
 </body>
 </html>
