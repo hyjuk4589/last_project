@@ -49,8 +49,10 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 <body>
 <jsp:include page="../default/header.jsp"/>
 <div align="center" class="div1">
-<form method="post" action="update">
+<form method="post" action="update?bno=${view.bno}">
+<input type="hidden" value="${view.bno}" name="bno">
    <table class="board_view">
+   		
         <caption>상세보기</caption>
         <colgroup>
             <col width="15%">
@@ -62,7 +64,7 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
             <tr>
                 <th>제목</th>
                 <td>
-                <input name="title" id="title" size="80" value="${view.title}" placeholder="제목을 입력하세요.">
+                <input type="text" name="title" id="title" size="80" value="${view.title}" placeholder="제목을 입력하세요.">
                 </td>
                 <th>조회수</th>
                 <td>${view.viewcnt }</td>
@@ -76,8 +78,8 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
             <tr style="height:300px;">
                 <th>내용</th>
                 <td colspan="3">
-                	<input name="content " id="content" style="height:200px;
-                	 width: 700px;" value="${view.title}" placeholder="내용을 입력해주세요.">
+                	<input type="text" name="content" id="content" style="height:200px;
+                	 width: 700px;" value="${view.content}" placeholder="내용을 입력해주세요.">
    
                 </td>
             </tr>

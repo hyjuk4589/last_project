@@ -40,6 +40,13 @@ public class CommnuityDAO {
 	}
 
 	public void update(CommnuityDTO dto) {
+		System.out.println("DAO");
+		System.out.println(dto.getBno());
+		System.out.println(dto.getContent());
+		System.out.println(dto.getTitle());
+		System.out.println(dto.getViewcnt());
+		System.out.println(dto.getWriter());
+		System.out.println(dto.getRegdate());
 		sqlSession.update(namepasce+".update_Commnuity",dto);
 	}
 		
