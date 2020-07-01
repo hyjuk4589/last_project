@@ -93,8 +93,7 @@ font: 400 14px 'Poppins',sans-serif;
 		<th>내용 :</th>
 		<td>
 		<textarea name="content" id="content" placeholder="내용을 입력하세요."
-		style="height:200px;
-                	 width: 700px;"></textarea>
+		style="height:200px; width: 700px;"></textarea>
 	</tr>
 
 	</table>
