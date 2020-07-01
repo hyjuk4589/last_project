@@ -27,7 +27,8 @@
 </div>
 
 <!-- <font class="font" size="7">나만의 상품</font> -->
-<div class="img1">
+<!-- 귀걸이 -->
+<div class="img1" onclick="location.href='earring'">
 <img src="resources/img/2.jpg" style=" padding-left: 500px;padding-top:50px; width: 600px; ">
 <img src="resources/img/5.png" style=" padding-top:50px; width: 500px; height: 800px;  "></div>
 
@@ -37,17 +38,17 @@
 <img src="resources/img/3.jpg" style="padding-left: 500px; width: 400px;" ></div>
 
 <!-- 가방  -->
-<div class="img3">
+<div class="img3" onclick="location.href='bag'">
 <img src="resources/img/10.JPG" style=" padding-left: 500px;padding-top:50px; width: 600px; ">
 <img src="resources/img/11.png" style=" padding-top:50px; width: 500px; height: 800px;  "></div>
 
-<div class="img4">
+<div class="img4" >
 <img src="resources/img/6.png" style="padding-left: 100px; padding-top:50px; width: 500px;">
 <img src="resources/img/12.png" style="padding-left: 500px; width: 400px;" ></div>
 
 <!-- 의류 -->
 
-<div class="img5">
+<div class="img5" onclick="location.href='dress'">
 <img src="resources/img/15.png" style=" padding-left: 500px;padding-top:50px; width: 500px; ">
 <img src="resources/img/16.png" style="  "></div>
 

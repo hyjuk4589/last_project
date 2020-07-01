@@ -57,11 +57,12 @@
                   $('#table').append("<tr style='height:500px' id='tr"+c+"'></tr>");
                }
                $("#tr"+c).append("<td> <img onmouseleave=style='width:312px;height:390px;margin-left:10px;' onmouseover=style='width:312px;height:390px;margin-left:10px;opacity:0.5'"+
-" style='width: 312px; height: 390px; margin-left: 10px;' src='"+s+"' onclick=location.href='design'> <p align='center' style='margin-top: 5px; font-family:궁서체;'>"+p+"</p><p align='center' style='margin-top: 5px; font-family:궁서체;'>"+"가격 :&nbsp;"+uu+"</p><p align='center' style='margin-top: 5px; color:gray;'>"+"리뷰 :&nbsp;"+zz+"</p>");
+                     " style='width: 312px; height: 390px; margin-left: 10px;' src='"+s+"' onclick=location.href='design'> <p align='center' style='margin-top: 5px; font-family:궁서체;'>"+p+"</p> <p align='center' style='margin-top: 5px; font-family:궁서체;'>"+"가격 : &nbsp;"+uu+"</p> <p align='center' style='margin-top: 5px; color:gray;' >"+"리뷰 : &nbsp;"+zz+"</p></td>");
             }
             number++;
          }
       });
+
    </script>
    
    <div align="center">
