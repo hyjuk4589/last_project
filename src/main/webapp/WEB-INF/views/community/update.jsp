@@ -25,6 +25,9 @@ padding-top: 200px;
 padding-bottom: 100px;
 font: 400 14px 'Poppins',sans-serif;
 }
+.div2 {
+ padding-top: 20px;
+}
   table {
     width: 60%;
     border-top: 1px solid #444444;
@@ -53,7 +56,7 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 <input type="hidden" value="${view.bno}" name="bno">
    <table class="board_view">
    		
-        <caption>상세보기</caption>
+        <caption>글 수정</caption>
         <colgroup>
             <col width="15%">
             <col width="35%">
@@ -85,9 +88,11 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
             </tr>
         </tbody>
     </table>
+    <div class="div2">
     <a href="list" id="list" class="btn">목록으로</a>
     <input type="submit" value="완료">
 <%--     <a href="update?bno=${view.bno}" class="btn">수정하기</a>  --%>
+	</div>
     </form>
  </div>       
 

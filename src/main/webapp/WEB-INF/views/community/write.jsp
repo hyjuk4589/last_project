@@ -40,6 +40,10 @@ $(document).ready(function(){
 padding-top: 200px;
 padding-bottom: 100px;
 font: 400 14px 'Poppins',sans-serif;
+
+}
+.div2 {
+ padding-top: 20px;
 }
   table {
     width: 60%;
@@ -50,12 +54,6 @@ font: 400 14px 'Poppins',sans-serif;
     border-bottom: 1px solid #444444;
     padding: 10px;
   }
- a { text-decoration:none;  color: #000; !important  } 
-a:link { color: #000; text-decoration: none; } <!-- link : 방문전 링크 상태 -->
-a:visited {
-	color: #000; text-decoration: none; } <!-- visited : 방문후 링크 상태 -->
-a:hover { color: #000; text-decoration: none; } <!-- hover : 마우스 오버했을 때 링크 상태 -->
-a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 링크 상태 -->
  fieldset {
     border: none;
     vertical-align: top;
@@ -64,21 +62,43 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 </head>
 <body>
 <jsp:include page="../default/header.jsp"/>
-<div class="div1">
+<div align="center" class="div1">
 	<form name="form1" action="save_write" method="post">
-	<div>
-		제목 : 
-		<input name="title" id="title" size="50" placeholder="제목을 입력하세요.">
-	</div>
-	<div>
-		내용 :
-		<textarea name="content" id="content" rows="5" cols="100" placeholder="내용을 입력하세요."></textarea>
-	</div>
-	<div>
-		이름 :
+	  <table class="board_view">
+	  
+	   <caption>글 작성</caption>
+	        <colgroup>
+            <col width="15%">
+            <col width="35%">
+            <col width="15%">
+            <col width="*">
+        </colgroup>
+	
+	
+	<tr>
+		<th>이름 :</th>
+		<td>
 		<input name="writer" id="writer" placeholder="이름을 입력하세요." >
-	</div>
-	<div>
+		</td>
+	</tr>
+	
+	<tr>
+		<th>제목 :</th>
+		<td>
+		<input name="title" id="title" size="80" placeholder="제목을 입력하세요.">
+		</td>
+	</tr>
+	
+	<tr>
+		<th>내용 :</th>
+		<td>
+		<textarea name="content" id="content" placeholder="내용을 입력하세요."
+		style="height:200px;
+                	 width: 700px;"></textarea>
+	</tr>
+
+	</table>
+	<div class="div2">
 		<button type="button" id="btnSave">확인</button>
 		<button type="reset">취소</button>
 	</div>

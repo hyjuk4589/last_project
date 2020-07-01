@@ -53,7 +53,7 @@ a:active { text-decoration: none; color: #000; } <!-- active : 클릭했을 때 
 <input type="hidden" value="${view.bno}" name="bno">
    <table class="board_view">
    		
-        <caption>상세보기</caption>
+        
         <colgroup>
             <col width="15%">
             <col width="35%">
