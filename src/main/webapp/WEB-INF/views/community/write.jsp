@@ -8,6 +8,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript" src="resources/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	$("#btnSave").click(function(){
@@ -15,17 +16,17 @@ $(document).ready(function(){
 		var content = $("#content").val();
 		var writer = $("#writer").val();
 		if(title == "") {
-			alert("제목을 입력하세요");
+			swal("제목을 입력하세요");
 			document.form1.title.focus();
 			return;
 		}
 		if(content == "") {
-			alert("내용을 입력하세요");
+			swal("내용을 입력하세요");
 			document.form1.content.focus();
 			return;
 		}
 		if(writer == "") {
-			alert("이름을 입력하세요");
+			swal("이름을 입력하세요");
 			document.form1.writer.focus();
 			return;
 		}
@@ -33,6 +34,7 @@ $(document).ready(function(){
 	});
 });
 </script>
+
 <style type="text/css">
 .div1 {
 padding-top: 200px;
