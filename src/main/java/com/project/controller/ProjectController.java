@@ -44,7 +44,6 @@ public class ProjectController {
 	}
 	@RequestMapping("joinok")
 	public String joinok(UserDTO dto) {
-		
 		service.insert(dto);
 		return "redirect:index";
 	}
