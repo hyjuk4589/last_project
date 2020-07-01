@@ -23,5 +23,7 @@ public interface CommunityService {
 
 	public void delete(CommnuityDTO dto);
 
-	public void update(CommnuityDTO dto);
+	public void update_save(CommnuityDTO dto);
+
+	public void update(CommnuityDTO dto, Model model);
 }
