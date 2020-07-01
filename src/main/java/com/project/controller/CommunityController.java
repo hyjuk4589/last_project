@@ -55,6 +55,12 @@ public class CommunityController {
 	
 	@RequestMapping("update")
 	public String update(CommnuityDTO dto) {
+		System.out.println(dto.getBno());
+		System.out.println(dto.getContent());
+		System.out.println(dto.getTitle());
+		System.out.println(dto.getViewcnt());
+		System.out.println(dto.getWriter());
+		System.out.println(dto.getRegdate());
 		service.update(dto);
 		return "redirect:list";
 	}

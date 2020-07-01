@@ -20,8 +20,14 @@
 		update self_design set pw=#{pw}, name=#{name}, addr=#{add}, phon=#{phon} where id=#{id}
 	</update>
 	
-	<select id="selectAll_List" resultType="listdto">
-		select * from data_list
+	<select id="drselectAll_List" resultType="dresslistdto">
+		select * from dress_list
+	</select>
+	<select id="baselectAll_List" resultType="baglistdto">
+		select * from bag_list
+	</select>
+	<select id="easelectAll_List" resultType="earringlistdto">
+		select * from earring_list
 	</select>
 	
 	<!-- Q&A 게시물 관련 -->
@@ -35,8 +41,8 @@
 	<update id="count_Commnuity">
 		update board_sys set viewcnt = viewcnt + 1 where bno=#{bno}
 	</update>
-	<update id="update_Commnuity">
-		update board_sys set title=#{title}, content=#{content} where bno=#{bno}
+	<update id="update_Commnuity" parameterType="comdto">
+		update board_sys set title=#{title},content=#{content} where bno=#{bno}
 	</update>
 	<insert id="insert_Commnuity">
 		insert into board_sys (bno,title,content,writer) values((select nvl(max(bno)+1,1)from board_sys),#{title},#{content},#{writer} )
